@@ -1,0 +1,13 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "functional"],
+  "rules": {
+  },
+  "extends": ["plugin:functional/recommended"]
+}

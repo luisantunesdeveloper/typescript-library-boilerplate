@@ -1,0 +1,64 @@
+{
+  "name": "typescript-library-boilerplate",
+  "version": "0.0.1",
+  "description": "Typescript library boilerplate",
+  "author": "Luís Antunes",
+  "license": "No licence",
+  "bin": {
+    "api-cli": "dist/bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luisantunesdeveloper/typescript-library-boilerplate.git"
+  },
+  "bugs": "https://github.com/luisantunesdeveloper/typescript-library-boilerplate.git/issues",
+  "keywords": [
+    "rules engine"
+  ],
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "build:watch": "yarn clean && tsc -w",
+    "clean": "rimraf dist",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov ts-node node_modules/tape/bin/tape src/**/*.test.ts | tap-spec; nyc report ---reporter=text",
+    "test:watch": "watch 'npm test' src",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.9",
+    "@types/rimraf": "^2.0.2",
+    "@types/tape": "^4.2.33",
+    "@types/yargs": "^13.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.3.2",
+    "@typescript-eslint/parser": "^2.3.2",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-functional": "^1.0.0-rc.2",
+    "immutable": "^4.0.0-rc.12",
+    "npm-run-all": "4.1.5",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "sinon": "^7.5.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "watch": "^1.0.2",
+    "yargonaut": "^1.1.4",
+    "yargs": "^14.0.0"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "src/**/*.test.ts",
+      "src/bin"
+    ],
+    "extension": [
+      ".ts"
+    ]
+  },
+  "dependencies": {}
+}

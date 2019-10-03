@@ -1,0 +1,24 @@
+# Visual Studio 2015 cache/options directory
+.vs/
+
+
+# Node stuff
+node_modules/
+
+
+# Exclude tsc generated files
+js/*.map
+js/ts.js
+
+
+# Exclude typescript outputs
+dist
+
+
+# Exclude tests output
+.nyc_output
+coverage
+
+
+# Exclude OS files
+.DS_Store

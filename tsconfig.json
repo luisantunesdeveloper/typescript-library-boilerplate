@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true,
+    "sourceRoot": "./",
+    "removeComments": false, // This needs to be false in order to have nyc ignoring lines working
+    "strictNullChecks": true,
+    "lib": [
+      "esnext"
+    ],
+    "resolveJsonModule": true,
+    "incremental": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
