@@ -13,7 +13,6 @@
   },
   "bugs": "https://github.com/luisantunesdeveloper/typescript-library-boilerplate.git/issues",
   "keywords": [
-    "rules engine"
   ],
   "scripts": {
     "build": "yarn clean && tsc",
