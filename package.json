@@ -12,8 +12,7 @@
     "url": "https://github.com/luisantunesdeveloper/typescript-library-boilerplate.git"
   },
   "bugs": "https://github.com/luisantunesdeveloper/typescript-library-boilerplate.git/issues",
-  "keywords": [
-  ],
+  "keywords": [],
   "scripts": {
     "build": "yarn clean && tsc",
     "build:watch": "yarn clean && tsc -w",
